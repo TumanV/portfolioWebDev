@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Ширина сайта должна быть равна ширине экрана, с которого вы заходите -->
+    <meta name="viewport"
+          content="width=device-width, user=scalable=no initial-scale=1.0, maximus-scale=1.0, minimum-scale=1.0">
+    <!-- Для internetexplorer. Используется самый послежний движок для рендера -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- название во вкладке -->
+    <title>New WebDeveloper</title>
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="portfolioWebDev.css" type="text/css">
+    <!-- Шрифты Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"
+          type="text/css">
+</head>
+<body>
+<!-- Header -->
+<header class="navbar">
+    <div class="container">
+        <a href="#/" class="navbar-brand">
+            <!-- В alt отображается информация, если картинка будет недоступна -->
+            <img src="images/logo.svg" alt="New WebDeveloper logo">
+        </a>
+        <!-- Создаём навигацию по сайту -->
+        <nav class="navbar-nav">
+            <ul>
+                <li>
+                    <a href="#Home">Home</a>
+                </li>
+                <li>
+                    <a href="#About me">About me</a>
+                </li>
+                <li>
+                    <a href="#Projects">My Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+
+<!-- Определяет главный контент документа -->
+<main>
+
+    <!-- hero section -->
+    <section class="hero"
+             style="background-image: url('https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+        <div class="container">
+            <h1>I'm Junior Backend WebDeveloper</h1> <!-- заголовок -->
+            <p class="lead">I want to work in creative command with interesting projects.</p> <!--параграф -->
+            <a href="#" class="btn btn-primary">My projects</a> <!--кнопка-линк-->
+        </div>
+    </section>
+
+    <!-- Split section -->
+    <section class="section-padding section-grey">
+        <div class="container">
+            <div class="split-section">
+                <div class="split-section-text">
+                    <h2 id="About me">About me</h2>
+                    <p class="lead">
+                        Я розробник-початкiвець. Хочу працювати у web-розробцi. З плином часу зрозумів, що хочу постійно
+                        навчатись новому. Мій рух - це навчання та отримання знань.
+                        Це, певно, найбільша мотивація в моєму житті. Сфера IT, вважаю, є найдоцільнішою галуззю для
+                        реалізації себе.<br>
+                        «Кожен повинен вчити програмування, тому що воно вчить думати»
+                        — Стів Джобс.<br></p>
+
+                    <p class="lead">
+                    <h2 id="hard-skills">Hard skills:</h2>
+                    - JavaScript;<br>
+                    - HTML, CSS;<br>
+                    - Python;<br>
+                    - Django Framework;<br>
+                    - SQL;<br>
+                    - Git;<br>
+                    - ОС Linux;<br>
+                    - розумію парадигми ООП;<br>
+                    - володію англійською на рівні читання документації та базової комунікації;<br>
+                    - володію німецькою на рівні pre-intermediate (маю сертифікат з Goethe-Institut).<br></p>
+
+                    <p class="lead">
+                    <h2 id="soft-skills">Soft skills:</h2>
+                    - відкритий та комунікабельний з людьми (вмію працювати в команді, дипломатичний);<br>
+                    - відповідально ставлюсь до виконання завдань та вмiю суворо дотримуватись дедлайнiв;<br>
+                    - проявляю гнучкість та самовідданість в роботі;<br>
+                    - вмiю приймати вiдповiдальнiсть на себе.</p>
+                    <a href="about.html"></a>
+                </div>
+                <div class="split-section-image">
+                    <img src="images/home/myPhoto.jpg" alt="Laptop" class="img-shadow img-rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="section-padding">
+        <div class="conteiner">
+            <div class="services">
+
+                <div class="service-col">
+                    <div class="service">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3058/3058464.png" alt="Project_1">
+                        <h4 id="Projects">Project_1</h4>
+                        <p>Please, read</p>
+                        <a class="more-btn" rel="noreferrer nofollow" href="#hard-skills">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="service-col">
+                    <div class="service">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3058/3058464.png" alt="Project_2">
+                        <h4>Project_2</h4>
+                        <p>Please, read</p>
+                        <a class="more-btn" rel="noreferrer nofollow" href="#soft-skills">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--формы и текст Contacts-->
+    <section class="section-padding">
+        <div class="container">
+            <div class="contact-form">
+                <div class="contact-form__form">
+                    <form action="#" class="form-layout">
+                        <div class="form-col-50">
+                            <label for="contact-name">Your name</label>
+                            <input type="text" class="form-control" name="contact-name" id="contact-name">
+                        </div>
+                        <div class="form-col-50">
+                            <label for="contact-email">Your Email</label>
+                            <input type="email" class="form-control" name="contact-email" id="contact-email">
+                        </div>
+                        <div class="form-col">
+                            <label for="contact-message">Your Message</label>
+                            <textarea class="form-control"
+                                      name="contact-message"
+                                      id="contact-message"
+                                      rows="4"></textarea>
+                        </div>
+                        <div class="form-col">
+                            <a class="more-btn" rel="noreferrer nofollow">Submit</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-form__info" id="contact">
+                    <p class="lead">Email: <a href="mailto:tumanviktor21@gmail.com">tumanviktor21@gmail.com</a></p>
+                    <p class="lead">Phone: <a href="tel:+380666902874">+38066 690 28 74</a></p>
+                    <br>
+                    <p class="lead">Send me an email or call me</p>
+                    <p class="lead">I will answer you as quickly as possible</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer. Копирайт и социальные линки внизу -->
+<footer>
+    <div class="conteiner">
+        <div class="footer-row">
+            <small class="footer-copyright">©2022 Webdev - All Rights Reserved</small>
+            <ul class="footer-social">
+                <li>
+                    <p><a target="_blank" href="https://m.facebook.com/viktor.tuman">
+                        <img src="images/icons/facebook.svg" alt="Tuman Viktor on Facebook"></a></p>
+                    </a>
+                </li>
+                <li>
+                    <p><a target="_blank" href="https://www.instagram.com/tuman_viktor/">
+                        <img src="images/icons/instagram.svg" alt="Tuman Viktor on Instagram"></a></p>
+                    </a>
+                </li>
+                <li>
+                    <p><a target="_blank"
+                          href="https://www.linkedin.com/in/viktor-tuman-181204211/">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111723.png" alt="Tuman Viktor on Linkedin"></a></p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>
